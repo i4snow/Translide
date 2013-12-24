@@ -1,0 +1,103 @@
+html *{
+  margin: 0;
+}
+html, body, article, section{
+  height: 100%;
+}
+h1{
+  font-size: 6em;  
+}
+h2{
+  font-size: 4em;
+}
+h3{
+  font-size: 3em;
+}
+h4{
+  font-size: 2em;
+}
+body
+{
+  
+}
+h1, h2{
+  text-align: center;
+  color: #eee;
+  padding-top: 35%;
+  margin: 0;
+}
+h3, h4, h5{
+  text-align: left;
+  padding: 10% 0 0 10%;
+  color: #eee;
+  margin: 0;
+}
+h4{
+  padding: 5% 0 0 20%;
+}
+article{
+  position: relative;
+}
+section{
+  overflow: hidden;
+  position: absolute;
+  left: -3000px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transition: 1s;
+  width: 100%;
+}
+section:first-child{
+  left: 100px;
+}
+section:nth-child(odd){
+  background: rgba(10, 12, 31, 0.95); 
+}
+section:nth-child(even){
+  background: rgba(10, 12, 31, 1);  
+}
+.box{
+  height: 200px;
+  width: 300px; 
+  background: #fff;
+  margin: 15%;
+  tansition: 1s;
+}
+.box h3{
+  color: #ccc;
+}
+.left, .right{
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle; 
+}
+.box-r{
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+}
+.box-s{
+  transform: scale(1.5, 1);
+  -webkit-transform: scale(1.5, 1);
+}
+.box-sk{
+  transform: skew(30deg, 10deg);
+  -webkit-transform: skew(30deg, 10deg);
+}
+.box-t{
+  transform: translate(100px);
+  -webkit-transform: translate(100px);
+}
+.box-o{
+  transform-origin: left top;
+  transform: rotate(10deg);
+  -webkit-transform-origin: left top;
+  -webkit-transform: rotate(30deg);
+}
+.box-m{
+  transform: matrix(1, 0.5, -0.5, 1, 30, 30);
+  -webkit-transform: matrix(1, 0, 0, 1, 30, 30);
+}
+h4 a{
+  font-size: 16px;
+}
