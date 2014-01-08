@@ -41,15 +41,14 @@ article{
 section{
   overflow: hidden;
   position: absolute;
-  left: -3000px;
+  left: 0;
   bottom: 0;
   top: 0;
   right: 0;
   transition: 1s;
-  width: 100%;
 }
-section:first-child{
-  left: 100px;
+section:last-child{
+  left: 0px!important;
 }
 section:nth-child(odd){
   background: rgba(10, 12, 31, 0.95); 
